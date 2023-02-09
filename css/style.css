@@ -9,6 +9,7 @@
 body {
   height: 100vh; /* vh - view port height (introduced in CSS3 */
   background-color: yellow;
+  overflow-x: hidden;
 }
 
 #player {

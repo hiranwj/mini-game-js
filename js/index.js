@@ -1,17 +1,25 @@
-// const player = document.querySelector('#player');
-const player = document.getElementById('player');
+// const playerElm = document.querySelector('#player');
+const playerElm = document.getElementById('player');
+console.log(playerElm);
+let dx = 0;
 
+setInterval(()=>{
+    playerElm.style.left = `${playerElm.offsetLeft + dx}px`
+}, 17); 
+/* 17 - frame rate */
 
 addEventListener('keydown', ({ key }) => {
-    // console.log('Key DOWN');
+
     if (key === "ArrowRight") {
-        console.log('ArrowRight');
+        dx = 10;
+    }
+    else if (key === "ArrowLeft") {
+        dx = -10;
     }
 });
 
 addEventListener('keyup', ({ key }) => {
-    // console.log('Key UP');
-    if (key === "ArrowLeft") {
-        console.log('ArrowLeft');
+    if (key === "ArrowRight" || key === "ArrowLeft") {
+        dx = 0;
     }
 });
