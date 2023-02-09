@@ -1,5 +1,14 @@
-h1 {
-  color: green;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#player {
+  background-color: red;
+  width: 75px;
+  height: 75px;
+  position: absolute;
 }
 
 /*# sourceMappingURL=style.css.map */
