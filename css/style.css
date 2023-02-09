@@ -29,10 +29,33 @@ body {
   height: 150px;
   width: 100%;
   bottom: 0;
-  height: 200px;
   background-image: url(/img/Tiles/2.png);
   background-size: contain;
   background-repeat: repeat;
+}
+
+#mushroom1 {
+  position: absolute;
+  width: 50px;
+  height: 40px;
+  background-image: url(/img/object/Mushroom_1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 72%;
+  left: 64%;
+  z-index: 0;
+}
+
+#mushroom2 {
+  position: absolute;
+  width: 50px;
+  height: 40px;
+  background-image: url(/img/object/Mushroom_2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 72%;
+  left: 60%;
+  z-index: 0;
 }
 
 #done-by {
